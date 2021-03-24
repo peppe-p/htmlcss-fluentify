@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* ##### COMMON HTML-CSS SELECTOR ##### */
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+h1 {
+    margin-bottom: 40px;
+    font-size: 3rem;
+    font-weight: 500;
+}
+nav {
+    width: 100%;
+    font-size: 0.7rem;
+    position: relative;
+    padding-top: 10px;
+}
+nav li {
+    display: inline-block;
+    margin: 0px 10px;
+}
+header a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+}
+nav ul {
+    list-style: none;
+    display: inline-block;
+    left: 0;
+    position: relative;
+    transform: translateY(-50%);
+}
+.rightnav a {
+    margin: 0px 10px;
+}
+header {
+    position: relative;
+    background-color: #0c325a;
+    height: 600px;
+    background-image: url("../img/background-header.png");
+    background-repeat: no-repeat;
+    background-size: 70%;
+    background-position: 113% 110%;
+    color: white;
+}
+
+/* ##### ID SELECTOR ##### */
+#logo {
+    margin-right: 60px;
+}
+
+/* ##### GENERAL CLASSES ##### */
+.widthed_page {
+    width: 80%;
+    height: 100%;
+    margin: auto;
+}
+
+.bttn {
+    background-color: #7cbb02;
+    border-radius: 4px;
+    padding: 6px 15px;
+}
+    .login_button {
+        background-color: transparent;
+        border: 1px solid white;
+        padding: 6px 20px;
+    }
+
+.rightnav {
+    display: inline-block;
+    margin-left: 7%;
+    right: 0;
+    position: relative;
+    transform: translateY(-50%);
+}
+.over_hero {
+    width: 50%;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+    .over_hero .bttn {
+        font-size: 0.8rem;
+        padding: 18px 18px;
+    }
