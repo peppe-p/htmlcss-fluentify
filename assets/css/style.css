@@ -133,7 +133,7 @@ main > hr {
 .col-3 {
     float: left;
     height: 100%;
-    width: calc(100%/3);
+    width: 33%;
     text-align: center;
     padding: 30px;
 }
@@ -152,4 +152,31 @@ main > hr {
     }
     .col-3 > p {
         color: #808080;
+    }
+
+
+.col-2 {
+    float: left;
+    height: 100%;
+    width: 49%;
+}
+    main section .col-2:last-child {
+        text-align: left;
+        width: 30%;
+    }
+        main section:last-child .col-2:last-child * {
+            margin: 15px 0px;
+        }
+        main section:last-child .col-2:last-child h2 {
+            font-weight: 500;
+        }
+        main section:last-child .col-2:last-child p {
+            color: #808080;
+        }
+
+    main section:last-child .col-2 img {
+         width: 75%;
+    }
+    main section:last-child {
+        margin-bottom: 50px;
     }
