@@ -55,6 +55,11 @@ header {
     background-position: 113% 110%;
     color: white;
 }
+main > hr {
+    color: white;
+    width: 95%;
+    margin: 25px auto;
+}
 
 /* ##### ID SELECTOR ##### */
 #logo {
@@ -83,7 +88,8 @@ header {
     display: inline-block;
     margin-left: 7%;
     right: 0;
-    position: relative;
+    bottom: 0;
+    position: absolute;
     transform: translateY(-50%);
 }
 .over_hero {
@@ -95,4 +101,55 @@ header {
     .over_hero .bttn {
         font-size: 0.8rem;
         padding: 18px 18px;
+    }
+
+.top_div {
+    height: 150px;
+    background-color: #d3d3d3;
+    position: relative;
+}
+    .top_div div {
+        position: absolute;
+        top: 50%;
+        left: 0%;
+        width: 100%;
+        transform: translateY(-50%);
+        text-align: center;
+    }
+        .top_div div * {
+            margin: 10px 0px;
+        }
+
+        .top_div div h2 {
+            font-weight: 500;
+        }
+
+        .top_div div h4 {
+            color: #808080;
+            font-weight: 500;
+            font-size: 17px;
+        }
+
+.col-3 {
+    float: left;
+    height: 100%;
+    width: calc(100%/3);
+    text-align: center;
+    padding: 30px;
+}
+    .col-3 > img {
+        height: 150px;
+        margin-bottom: 20px;
+    }
+    .col-3 > h2 {
+        color: #7cbb02;
+        font-weight: 500;
+    }
+    .col-3 > hr {
+        width: 80px;
+        margin: 25px auto;
+        color: lightgray;
+    }
+    .col-3 > p {
+        color: #808080;
     }
