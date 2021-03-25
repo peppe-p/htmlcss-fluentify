@@ -103,12 +103,12 @@ main > hr {
         padding: 18px 18px;
     }
 
-.top_div {
+.top_div, footer {
     height: 150px;
     background-color: #d3d3d3;
     position: relative;
 }
-    .top_div div {
+    .top_div > div {
         position: absolute;
         top: 50%;
         left: 0%;
@@ -179,4 +179,51 @@ main > hr {
     }
     main section:last-child {
         margin-bottom: 50px;
+    }
+
+footer .widthed_page div {
+    position: relative;
+}
+    footer h2  {
+        position: absolute;
+        top: 50%;
+        left: 0%;
+        transform: translateY(-50%);
+        text-align: center;
+    }
+
+    footer .col-2:last-child div {
+            position: absolute;
+            top: 50%;
+            right: 0%;
+            transform: translateY(-50%);
+            text-align: center;
+    }
+
+    footer .col-2:last-child div * {
+        display: inline-block;
+        margin: 0px 10px;
+    }
+        footer .col-2:last-child div a {
+            text-decoration: none;
+            color: white;
+            text-transform: uppercase;
+            font-size: 11px;
+            padding: 15px 8px;
+    }
+
+    footer h6 {
+        font-weight: 500;
+        color: #808080;
+        font-size: 15px;
+    }
+
+    footer select {
+        background-color: transparent;
+        border: none;
+        border-bottom: 1px solid gray;
+        width: 150px;
+        font-weight: 500;
+        color: #808080;
+
     }
